@@ -1,0 +1,275 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    height: 4rem;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+nav {
+    width: 30rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #0dac30;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reachUs-button {
+    padding: 1rem;
+    background-color: #0dac30;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reachUs-button:hover {
+    background-color: #1ac840;
+}
+
+/* banner section styles */
+.banner {
+    text-align: center;
+    background: url('https://media.istockphoto.com/id/1470613450/photo/hand-touching-on-global-internet-connection-business-global-internet-connection-application.jpg?s=612x612&w=0&k=20&c=H9cx54Tpit_zXhcfvJLfrSQCvL_se0jl6V-amuAfO4M=') center/cover no-repeat;
+    height: 500px; /* Adjust height as needed */
+    /* opacity: 0.5; Adjust opacity as needed */
+    margin: 0 auto;
+    position: relative; /* Add position relative to allow absolute positioning within */
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image within the banner */
+    opacity: 0.5;
+}
+
+.css-3d-text  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+/* Contact form styles */
+.contact-form {
+    padding: 40px 0;
+    margin: 0 10px;
+    text-align: center; /* Center the "Get in Touch" text and paragraph */
+}
+
+.contact-info {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.form-container {
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-container input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #0dac30;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    height: 20vh;
+}
+
+/* Hamburger styles */
+.hamburger {
+    display: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    #nav-menu {
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        display: none;
+    }
+
+    #nav-menu.active {
+        display: block;
+        flex-direction: row;
+        padding: 1rem;
+    }
+
+    /* Center the "Get in Touch" text and paragraph for smaller screens */
+    .contact-form {
+        text-align: center;
+    }
+
+    /* Adjust the max-width of the form-container for smaller screens */
+    .form-container {
+        max-width: 80%;
+    }
+
+    /* Center the image within the banner for smaller screens */
+    .banner img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+strong{
+    color:green;
+}
+.h11{
+    
+    margin-top: 30px;
+    color: white;
+    font-size: 55px;
+}
+.p1{
+   
+   
+    font-size: 20px;
+    
+
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    
+
+}
+
+.css-3d-text {
+    font-size: 41px;
+    color: #f7f1de;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 0px 0px 0 rgb(239,233,214),
+                 1px 1px 0 rgb(230,224,205),
+                 2px 2px 0 rgb(222,216,197),
+                 3px 3px 0 rgb(214,208,189),
+                 4px 4px 0 rgb(205,199,180),
+                 5px 5px 0 rgb(197,191,172),
+                 6px 6px  0 rgb(189,183,164),
+                 7px 7px 6px rgba(0,0,0,1),
+                 7px 7px 1px rgba(0,0,0,0.5),
+                 0px 0px 6px rgba(0,0,0,.2);
+ }
+
+
+
+
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
